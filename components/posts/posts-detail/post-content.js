@@ -3,7 +3,7 @@ import PostHeader from "./post-header";
 import ReactMarkdown from "react-markdown"
 import React from 'react'
 import { PrismLight as SyntaxHighlighter} from 'react-syntax-highlighter'
-import { atomDark} from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark'
+import  atomDark  from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark'
 import Image from 'next/image'
 import  js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
 import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css'
@@ -39,7 +39,7 @@ function PostContent(props) {
         const language = className.split('-')[1]; // className is something like language-js => We need the "js" part here
         return (
           <SyntaxHighlighter
-           style={atomDark}
+           style={atomDark }
            language={language}
          //  children={children}
           />
